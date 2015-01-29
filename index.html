@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dogs of Schiller Park | Tracking Daily Dog Sightings at Schiller Park</title>
+        <meta name="description" content="A site dedicated to those obsessed with dogs and Schiller Park in Columbus, Ohio.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <header class="main-header">
+                <h1>Schiller Dog Sightings</h1>
+                <h2>Thursday January 29, 2015</h2>
+        </header>
+
+        <main>
+            <section class="sightings">
+                <ul class="sightings__list clearfix">
+                    <li class="sightings__item">
+                        <h4 class="sightings__breed">Boston Terrier</h4>
+                        <img class="sightings__image" src="/img/boston.jpg" alt="Boston Terrier"/>
+                        <h5 class="sighting__locations"><strong>Location:</strong> Softball Field</h5>
+                        <time datetime="2015-01-29 08:56Z">13 Hours Ago</time>
+                    </li>
+                    <li class="sightings__item">
+                        <h4 class="sightings__breed">Golden Retriever</h4>
+                        <img class="sightings__image" src="/img/golden.jpg" alt="Golden Retriever"/>
+                        <h5 class="sighting__locations"><strong>Location:</strong> Pond</h5>
+                        <time datetime="2015-01-29 09:23Z">11 Hours Ago</time>
+                    </li>
+                    <li class="sightings__item">
+                        <h4 class="sightings__breed">Mutt</h4>
+                        <img class="sightings__image" src="/img/mutt-1.jpg" alt="Mutt 1"/>
+                        <h5 class="sighting__locations"><strong>Location:</strong> Stage</h5>
+                        <time datetime="2015-01-29 14:29Z">6 Hours Ago</time>
+                    </li>
+                    <li class="sightings__item">
+                        <h4 class="sightings__breed">English Bulldog</h4>
+                        <img class="sightings__image" src="/img/english-bulldog.jpg" alt="English Bulldog"/>
+                        <h5 class="sighting__locations"><strong>Location:</strong> Stage</h5>
+                        <time datetime="2015-01-29 15:01Z">5 Hours Ago</time>
+                    </li>
+                    <li class="sightings__item">
+                        <h4 class="sightings__breed">Corgi</h4>
+                        <img class="sightings__image" src="/img/corgi.jpg" alt="Corgi"/>
+                        <h5 class="sighting__locations"><strong>Location:</strong> Pond</h5>
+                        <time datetime="2015-01-29 15:02Z">5 Hours Ago</time>
+                    </li>
+                    <li class="sightings__item">
+                        <h4 class="sightings__breed">Mutt</h4>
+                        <img class="sightings__image" src="/img/mutt-2.jpg" alt="Mutt 2"/>
+                        <h5 class="sighting__locations"><strong>Location:</strong> 3rd Street Gate</h5>
+                        <time datetime="2015-01-29 18:06Z">2 Hours Ago</time>
+                    </li>
+                    <li class="sightings__item">
+                        <h4 class="sightings__breed">Mutt</h4>
+                        <img class="sightings__image" src="/img/mutt-3.jpg" alt="Mutt 3"/>
+                        <h5 class="sighting__locations"><strong>Location:</strong> Rec Center</h5>
+                        <time datetime="2015-01-29 19:26Z">An Hour Ago</time>
+                    </li>
+                    <li class="sightings__item">
+                        <h4 class="sightings__breed">Bull Mastiff</h4>
+                        <img class="sightings__image" src="/img/bull-mastiff.jpg" alt="Bull Mastiff"/>
+                        <h5 class="sighting__locations"><strong>Location:</strong> Playground</h5>
+                        <time datetime="2015-01-29 19:45Z">45 Minutes Ago</time>
+                    </li>
+                    <li class="sightings__item">
+                        <h4 class="sightings__breed">Black Lab</h4>
+                        <img class="sightings__image" src="/img/black-lab.jpg" alt="Black Lab"/>
+                        <h5 class="sighting__locations"><strong>Location:</strong> Jaeger St Gate</h5>
+                        <time datetime="2015-01-29 20:15Z">15 Minutes Ago</time>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+        <section class="submit-sighting">
+            <header class="submit-sighting__header">
+                <h2>Did you see a dog breed not listed here?</h2>
+                <p>Help us out by submitting this form! We strive to keep track of all of the breeds of dogs that visit Schiller on a daily basis. </p>
+            </header>
+            <form class="submit-siting__form form" action="index.php" method="post">
+                <fieldset>
+                    <label class="form__label" for="dog_type">Breed of Dog</label>
+                    <input class="form__text" name="dog_type" id="dog_type" type="text" placeholder="Corgi" />
+
+                    <label class="form__label" for="time">Time of Sighting</label>
+                    <input type="datetime" class="form__datetime" name="time" id="time" />
+
+                    <label class="form__label" for="location">Location of Sighting</label>
+                    <select name="location" id="location" class="form__select">
+                        <option value="">Select One</option>
+                        <option value="pond">Pond</option>
+                        <option value="bridge">Bridge</option>
+                        <option value="playground">Playground</option>
+                        <option value="stage">Stage</option>
+                        <option value="third-street">Third Street Gate</option>
+                        <option value="jaeger-gate">Jaeger Street Gate</option>
+                        <option value="statue">Schiller Statue</option>
+                    </select>
+
+                    <input type="submit" class="form__submit" value="Submit Sighting" />
+                </fieldset>
+            </form>
+        </section>
+
+        <footer class="main__footer">
+            <p>&copy; 2015 Dog Spotters Inc.</p>
+        </footer>
+
+        <!--<script>-->
+            <!--var date = new Date();-->
+            <!--window.alert("Hello World! It's currently " + date);-->
+        <!--</script>-->
+    </body>
+</html>
